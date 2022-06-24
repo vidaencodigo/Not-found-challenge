@@ -1,0 +1,21 @@
+@import url('./fonts.css');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+
+    font-family: 'Inconsolata', monospace;
+    padding: 20px 24px;
+}
+
+.nav h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
