@@ -1,5 +1,6 @@
 @import url('./fonts.css');
 
+
 * {
 
     margin: 0;
@@ -13,9 +14,144 @@
     padding: 20px 24px;
 }
 
-.nav h3 {
+.nav h1 {
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -2px;
+    color: #333333;
+}
+
+.image--responsive {
+    min-width: 286px;
+    min-height: 238px;
+    max-width: 539px;
+    max-height: 447px;
+    width: 90%;
+    height: auto;
+}
+
+.main {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__scarecrow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__text__title h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 40px;
+    color: #333333;
+}
+
+.main__text__p {
+    margin-top: 30px;
+    margin-bottom: 66px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 24px 43px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.button--primary {
+    background-color: #333333;
+    color: #ffff;
+}
+
+.button:hover {
+    box-shadow: 5px 5px 0px 0px #4F4F4F;
+}
+
+.button:active {
+    outline: none;
+    text-decoration: underline;
+}
+
+.attribution {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 24px 24px;
+}
+
+.attribution p {
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.attribution a {
+    font-weight: 700;
+    color: #BDBDBD;
+}
+
+
+
+
+@media (min-width:1024px) {
+    .main {
+        margin-top: 180px;
+        flex-direction: row;
+    }
+
+    .main__text__title h3 {
+
+        font-size: 64px;
+
+    }
+
+    .main__text__p {
+        width: 70%;
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .nav h1 {
+        font-size: 24px;
+    }
+
+
+}
+
+@media (min-width:1440px) {
+    .attribution {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+    }
 }
